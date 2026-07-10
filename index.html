@@ -70,7 +70,7 @@
   }
 }
 </script>
-<link href="img/favicon.png" rel="icon" type="image/png"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&amp;family=Archivo:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -258,6 +258,11 @@ a.group-tile:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(10,35,6
 .form-field input::placeholder,.form-field textarea::placeholder{color:rgba(255,255,255,.45)}
 .form-field input:focus,.form-field textarea:focus{outline:none;border-color:var(--skyline);background:rgba(255,255,255,.12)}
 .quote-form .btn{border:none;cursor:pointer;font-family:inherit}
+.terms-box{background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy-deep);border-radius:12px;padding:24px 28px;margin-bottom:32px;max-width:720px}
+.terms-title{font-size:1.05rem;color:var(--navy-deep);margin-bottom:12px}
+.terms-list{list-style:none;padding:0;margin:0}
+.terms-list li{position:relative;padding-left:22px;margin-bottom:8px;color:var(--steel);font-size:.93rem;line-height:1.5}
+.terms-list li::before{content:"—";position:absolute;left:0;color:var(--navy-deep);font-weight:700}
 .form-ok{display:none;position:fixed;inset:0;background:rgba(10,35,66,.7);z-index:200;align-items:center;justify-content:center}
 .form-ok.show{display:flex}
 .form-ok-inner{background:#fff;border-radius:16px;border-top:5px solid #25D366;padding:36px 32px;max-width:400px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
@@ -355,7 +360,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <header>
 <div class="wrap nav">
 <a class="brand" href="#top">
-<img alt="AKSAN" src="img/logo.webp" width="462" height="114"/>
+<img alt="AKSAN" src="logo.webp" width="462" height="114"/>
 <small>Toptan Yapı Kimyasalları ve Hırdavat Malzemeleri</small>
 </a>
 <ul class="nav-links">
@@ -402,32 +407,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div aria-hidden="true" class="sec-mark"></div>
 <h2 class="sec-title display">Ürünler</h2>
 <p class="sec-sub">Stoktan teslim, toptan fiyatla. Tüm ürünler orijinal — fatura ve irsaliye ile.</p>
-<div class="groups">
-<a class="group-tile g-active" href="#yapi-kimyasallari">
-<span aria-label="Yapı kimyasalları ve mastik ürünleri" class="g-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M10 2h4"></path><path d="M12 2v4"></path><rect height="3" rx="1" width="6" x="9" y="6"></rect><rect height="13" rx="2" width="8" x="8" y="9"></rect><path d="M8 14h8"></path></svg></span>
-<span class="g-name display">Yapı Kimyasalları</span>
-<span class="g-items">PU Mastik · Silikon</span>
-<span class="g-badge">Stokta</span>
-</a>
-<div class="group-tile">
-<span aria-label="Koli bandı ve teknik bantlar" class="g-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="11" cy="12" r="8"></circle><circle cx="11" cy="12" r="3"></circle><path d="M19 12h3v4h-7"></path></svg></span>
-<span class="g-name display">Bantlar</span>
-<span class="g-items">Koli Bandı · Teknik Bantlar</span>
-<span class="g-badge g-soon">Yakında</span>
-</div>
-<div class="group-tile">
-<span aria-label="Teknik spreyler ve pas sökücüler" class="g-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="14" rx="2" width="8" x="7" y="8"></rect><path d="M9 8V6h4v2"></path><path d="M10 4h2"></path><path d="M17 4l2-1M18 7l2 0M17 10l2 1"></path></svg></span>
-<span class="g-name display">Teknik Spreyler</span>
-<span class="g-items">Çok Amaçlı Yağlayıcılar · Pas Sökücüler</span>
-<span class="g-badge g-soon">Yakında</span>
-</div>
-<div class="group-tile">
-<span aria-label="Silikon tabancası ve uygulama ekipmanları" class="g-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 10h13l5-2v6l-5-2H3z"></path><path d="M6 14v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-5"></path><path d="M21 9v4"></path></svg></span>
-<span class="g-name display">Uygulama Ekipmanları</span>
-<span class="g-items">Silikon Tabancası · Sarf Malzemeleri</span>
-<span class="g-badge g-soon">Yakında</span>
-</div>
-</div>
+
 <div class="cat-head" id="yapi-kimyasallari">
 <span class="cat-name display">Yapı Kimyasalları</span>
 <span aria-hidden="true" class="cat-line"></span>
@@ -480,6 +460,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <li><strong>Ambalaj:</strong> 280 ml kartuş</li>
 <li><strong>Koli içi:</strong> 25 adet</li>
 <li><strong>Palet:</strong> 72 koli</li>
+<li><strong>Yapı:</strong> Tek bileşenli, hava nemi ile kürleşen poliüretan</li>
+<li><strong>Sıcaklık dayanımı:</strong> −40 °C / +90 °C</li>
+<li><strong>Kuruma:</strong> Yüzey ~45 dk · tam kürleşme 24 saat</li>
+<li><strong>Özellikler:</strong> Sürekli elastik, UV dayanımlı, boyanabilir</li>
+<li><strong>Yüzeyler:</strong> Beton, metal, alüminyum, ahşap, cam, polyester</li>
 </ul>
 <a class="btn btn-red" href="#" id="mWa" rel="noopener" target="_blank">Bu Ürün İçin Fiyat Al</a>
 </div>
@@ -506,6 +491,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <h2 class="sec-title display">Kurumsal</h2>
 <p class="corp-text">Aksan, temelleri 1986'a uzanan ticari tecrübenin üzerine kurulmuş, Kayseri Organize Sanayi Bölgesi'nde faaliyet gösteren bir toptan satış firmasıdır. Yapı kimyasalları ve hırdavat malzemelerinde, sanayi işletmelerinin ve satış noktalarının düzenli tedarik ihtiyacına odaklanır.</p>
 <p class="corp-text">İş modelimiz basittir: doğru ürünü, hazır stoktan, söz verdiğimiz günde teslim etmek. Satışlarımız koli ve palet bazındadır; Kayseri OSB'deki depomuzdan OSB işletmelerine aynı gün, Kayseri geneli ve çevre illere hızlı sevkiyat yapılır.</p>
+<p class="corp-text">Ağırlıklı olarak hırdavat perakendecileri ve toptancıları olmak üzere; mobilya imalatçılarından inşaat firmalarına, sanayi işletmelerinden satış noktalarına kadar geniş bir müşteri ağına koli ve palet bazında düzenli tedarik sağlıyoruz.</p>
 </div>
 <div class="corp-facts">
 <div class="fact"><span class="display f-big">Saha Satışı</span><span class="f-label">Kayseri ve bölgesinde yerinde ziyaret, düzenli tedarik</span></div>
@@ -559,6 +545,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div aria-hidden="true" class="sec-mark"></div>
 <h2 class="sec-title display">Toptan Fiyat Teklifi İsteyin</h2>
 <p class="sec-sub">Koli veya palet bazında fiyat teklifi için bilgilerinizi bırakın — aynı iş günü içinde sizi arayalım. Dilerseniz WhatsApp üzerinden de anında ulaşabilirsiniz.</p>
+<div class="terms-box">
+<h3 class="display terms-title">Çalışma Koşullarımız</h3>
+<ul class="terms-list">
+<li>Satışlarımız <strong>koli ve palet bazındadır</strong> — perakende satışımız yoktur.</li>
+<li>Tüm satışlar <strong>faturalı ve irsaliyelidir</strong>.</li>
+<li><strong>Kayseri OSB içi teslimat ücretsizdir</strong>; sipariş aynı gün depomuzdan çıkar.</li>
+<li>Şehir dışı sevkiyatta <strong>nakliye alıcıya aittir</strong>; anlaşmalı ambar veya kargo ile gönderim yapılır.</li>
+<li>Ödeme koşulları sipariş görüşmesinde netleştirilir.</li>
+</ul>
+</div>
 <form class="quote-form" data-netlify="true" id="teklifForm" method="POST" name="teklif" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="teklif"/>
 <p class="hp"><label>Doldurmayın: <input name="bot-field"/></label></p>
@@ -762,7 +758,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   var mWa = document.getElementById('mWa');
   var mClose = document.getElementById('mClose');
   var lastFocus = null;
-  var IMGS = {"Siyah": "img/mastik-siyah.webp", "Beyaz": "img/mastik-beyaz.webp", "Gri": "img/mastik-gri.webp", "Kırmızı": "img/mastik-kirmizi.webp", "Antrasit Gri": "img/mastik-antrasit.webp"};
+  var IMGS = {"Siyah": "mastik-siyah.webp", "Beyaz": "mastik-beyaz.webp", "Gri": "mastik-gri.webp", "Kırmızı": "mastik-kirmizi.webp", "Antrasit Gri": "mastik-antrasit.webp"};
 
   function openModal(renk, hex){
     var ad = 'Dayson Extra Profesyonel PU Mastik ' + renk + ' 280 ML';
