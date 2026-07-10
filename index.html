@@ -32,7 +32,7 @@
     {"@type": "Question", "name": "Kayseri'de Dayson PU mastik toptan nereden alınır?", "acceptedAnswer": {"@type": "Answer", "text": "Aksan Hırdavat'ın Kayseri Organize Sanayi Bölgesi 2. Cadde No: 10 adresindeki deposundan stoktan teslim alınabilir. OSB içi teslimat ücretsizdir, sipariş aynı gün depodan çıkar. Telefon: 0533 508 53 57"}},
     {"@type": "Question", "name": "Dayson Extra PU Mastik hangi renklerde bulunur?", "acceptedAnswer": {"@type": "Answer", "text": "Siyah, beyaz, gri, kırmızı ve antrasit gri renkler Aksan Hırdavat deposunda sürekli stoktan teslim edilir."}},
     {"@type": "Question", "name": "Aksan Hırdavat perakende satış yapıyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, satışlar yalnızca koli ve palet bazında toptandır. Tüm satışlar faturalıdır."}},
-    {"@type": "Question", "name": "Dayson Extra PU Mastik'in teknik özellikleri nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır, sürekli elastik kalır, UV ışınlarına dayanıklıdır ve üzeri boyanabilir. Beton, metal, alüminyum, ahşap, cam ve polyester yüzeylere yapışır."}}
+    {"@type": "Question", "name": "Dayson Extra PU Mastik'in teknik özellikleri nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır, sürekli elastik kalır (kopmada uzama %600 üzeri), UV ışınlarına dayanıklıdır ve su bazlı boyalarla boyanabilir. Beton, ahşap, alüminyum, lake metaller, polyester, cam ve taş yüzeylere yapışır."}}
   ]
 }
 </script>
@@ -372,28 +372,35 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 /* ---------- karanlık mod ---------- */
 .theme-toggle{background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:1rem;line-height:1;margin-left:14px}
+/* Strateji: navy değişkenleri koyu modda AÇIK renge çevrilir (20 yerde yazı rengi olarak
+   kullanılıyor), navy'yi ARKA PLAN olarak kullanan 6 bileşen ise sabit koyu değerlerle
+   yeniden tanımlanır. Böylece hiçbir yazı kaybolmaz. */
 body.dark{
   --bg:#0C141E;
   --card:#141F2C;
   --line:#26364A;
   --steel:#A9B6C4;
   --skyline:#2E4A6B;
+  --navy:#9FC2E8;
+  --navy-deep:#E8EEF5;
+  background:var(--bg);
 }
-body.dark{background:var(--bg)}
+body.dark .hero,
+body.dark .quote-sec{background:linear-gradient(165deg,#0E2F5A 0%,#0A2342 100%)}
+body.dark .why{background:#0A2342}
+body.dark .why-item{background:#0E2A4C}
+body.dark footer{background:#081B33}
+body.dark .form-ok-inner button{background:#0A2342;color:#fff}
 body.dark header,
 body.dark .brands-sec,
 body.dark .fact,
 body.dark .terms-box,
+body.dark .form-ok-inner,
 body.dark .modal{background:var(--card)}
 body.dark .brand img{background:#F6F8FB;border-radius:8px;padding:3px 8px;box-sizing:border-box}
-body.dark .sec-title, body.dark .cat-name, body.dark .m-title,
-body.dark .family-head h3, body.dark .brand-tile .b-name,
-body.dark .modal h3, body.dark .terms-title,
-body.dark .corp .sec-title, body.dark .fact .f-big,
-body.dark .contact-card h4, body.dark #iletisim h4{color:#E8EEF5}
-body.dark .m-info li, body.dark .m-info li strong{color:#C4D0DD}
-body.dark .quote-form input, body.dark .quote-form select, body.dark .quote-form textarea{background:#0F1926;color:#E8EEF5;border-color:var(--line)}
-body.dark .quote-form label{color:#C4D0DD}
+body.dark .quote-form input,
+body.dark .quote-form select,
+body.dark .quote-form textarea{background:#0F1926;color:#E8EEF5;border-color:var(--line)}
 body.dark .m-close{color:#E8EEF5}
 .faq{max-width:760px;margin-top:48px}
 .faq-title{font-size:1.3rem;color:var(--navy-deep);margin-bottom:16px}
@@ -404,6 +411,15 @@ body.dark .faq-item summary{color:#E8EEF5}
 .faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:var(--steel)}
 .faq-item[open] summary::after{content:"−"}
 .faq-item p{padding:0 18px 16px;color:var(--steel);font-size:.92rem;line-height:1.6}
+.usage-line{font-size:.9rem;color:var(--steel);line-height:1.6;margin:10px 0}
+.usage-line strong{color:var(--navy-deep)}
+.kvkk-row{margin:14px 0 18px}
+.kvkk-label{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:#C7D4E4;cursor:pointer;line-height:1.5}
+.kvkk-label input{margin-top:3px;flex-shrink:0}
+.kvkk-details{margin-top:8px}
+.kvkk-details summary{font-size:.8rem;color:#A9C6E8;cursor:pointer;text-decoration:underline}
+.kvkk-details p{font-size:.8rem;color:#C7D4E4;line-height:1.6;margin-top:8px;max-width:600px}
+.m-src a{font-size:.82rem;color:var(--navy);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -468,7 +484,9 @@ body.dark .faq-item summary{color:#E8EEF5}
 <div class="family-head">
 <span class="tag">Dayson · Yapı Kimyasalları</span>
 <h3 class="display">Dayson Extra Profesyonel PU Mastik — 280 ml</h3>
-<p>Yüksek yapışma gücü ve esnekliğiyle dilatasyon derzleri, yapı montajı ve sızdırmazlık uygulamalarında tercih edilen profesyonel sınıf poliüretan mastik. Rengi seçin, ambalaj ve sipariş detayları açılır.</p>
+<p>Yüksek yapışma gücü ve kalıcı esnekliğiyle profesyonellerin ilk tercihi olan, tek bileşenli ve hava nemi ile kürleşen poliüretan mastik. Beton, ahşap, alüminyum, lake metaller, polyester, cam ve taş dahil birçok yüzeye güçlü yapışma sağlar; kürleştikten sonra hacim kaybetmez, çatlamaz ve su bazlı boyalarla boyanabilir.</p>
+<p class="usage-line"><strong>Başlıca kullanım alanları:</strong> Dilatasyon derzleri ve derz dolgusu · yapı ve prekast panel montajı · çelik konstrüksiyon birleşimleri · karavan, konteyner ve araç üstü ekipman izolasyonu · otomotiv karoseri ek yerleri · mobilya ve doğrama birleşimleri.</p>
+<p>Rengi seçin, ambalaj bilgisi ve teknik özellikler açılır.</p>
 </div>
 <div class="variants">
 <button class="variant" data-hex="var(--m-siyah)" data-renk="Siyah">
@@ -523,7 +541,7 @@ body.dark .faq-item summary{color:#E8EEF5}
 </details>
 <details class="faq-item">
 <summary>Dayson Extra PU Mastik'in teknik özellikleri nedir?</summary>
-<p>Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır; sürekli elastik kalır, UV ışınlarına dayanıklıdır ve üzeri boyanabilir. Beton, metal, alüminyum, ahşap, cam ve polyester yüzeylere yapışır.</p>
+<p>Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır; sürekli elastik kalır (kopmada uzama %600 üzeri), UV ışınlarına dayanıklıdır ve su bazlı boyalarla boyanabilir. Beton, ahşap, alüminyum, lake metaller, polyester, cam ve taş yüzeylere yapışır.</p>
 </details>
 </div>
 </div>
@@ -540,10 +558,14 @@ body.dark .faq-item summary{color:#E8EEF5}
 <li><strong>Koli içi:</strong> 25 adet</li>
 <li><strong>Palet:</strong> 72 koli</li>
 <li><strong>Yapı:</strong> Tek bileşenli, hava nemi ile kürleşen poliüretan</li>
+<li><strong>Uygulama sıcaklığı:</strong> +5 °C / +35 °C</li>
 <li><strong>Sıcaklık dayanımı:</strong> −40 °C / +90 °C</li>
-<li><strong>Kuruma:</strong> Yüzey ~45 dk · tam kürleşme 24 saat</li>
-<li><strong>Özellikler:</strong> Sürekli elastik, UV dayanımlı, boyanabilir</li>
-<li><strong>Yüzeyler:</strong> Beton, metal, alüminyum, ahşap, cam, polyester</li>
+<li><strong>Kuruma:</strong> Kabuklaşma ~70 dk · kürleşme 4 mm/24 saat (23 °C)</li>
+<li><strong>Esneklik:</strong> Sürekli elastik — kopmada uzama &gt; %600</li>
+<li><strong>Dayanım:</strong> UV direnci iyi · su ve tuz sisi direnci mükemmel</li>
+<li><strong>Boyanabilirlik:</strong> Su bazlı boyalarla uyumlu; solvent bazlıda ön test önerilir</li>
+<li><strong>Yüzeyler:</strong> Beton, ahşap, alüminyum, lake metaller, polyester, cam, taş</li>
+<li class="m-src"><a href="https://www.avrupagroup.com/products/dayson-sealants/dayson-extra-polyurethane-sealant" rel="noopener" target="_blank">Distribütör resmi teknik sayfası ↗</a></li>
 </ul>
 <a class="btn btn-red" href="#" id="mWa" rel="noopener" target="_blank">Bu Ürün İçin Fiyat Al</a>
 </div>
@@ -568,7 +590,7 @@ body.dark .faq-item summary{color:#E8EEF5}
 <div>
 <div aria-hidden="true" class="sec-mark"></div>
 <h2 class="sec-title display">Kurumsal</h2>
-<p class="corp-text">Aksan, temelleri 1986'a uzanan ticari tecrübenin üzerine kurulmuş, Kayseri Organize Sanayi Bölgesi'nde faaliyet gösteren bir toptan satış firmasıdır. Yapı kimyasalları ve hırdavat malzemelerinde, sanayi işletmelerinin ve satış noktalarının düzenli tedarik ihtiyacına odaklanır.</p>
+<p class="corp-text">Aksan, temelleri 1986'ya uzanan iki kuşaklık ticari tecrübenin üzerine kurulmuş bir aile şirketidir. Kırk yılı aşkın saha satış birikimi ile yeni kuşağın dijital altyapısını aynı çatı altında birleştirir: müşterilerimizi yerinde ziyaret eden, telefonla ulaşılabilen ve sözünün arkasında duran bir ticaret anlayışını, güncel stok takibi ve hızlı sevkiyat düzeniyle destekleriz. Kayseri Organize Sanayi Bölgesi'ndeki depomuzdan, yapı kimyasalları ve hırdavat malzemelerinde sanayi işletmelerinin ve satış noktalarının düzenli tedarik ihtiyacına odaklanırız.</p>
 <p class="corp-text">İş modelimiz basittir: doğru ürünü, hazır stoktan, söz verdiğimiz günde teslim etmek. Satışlarımız koli ve palet bazındadır; Kayseri OSB'deki depomuzdan OSB işletmelerine aynı gün, Kayseri geneli ve çevre illere hızlı sevkiyat yapılır.</p>
 <p class="corp-text">Ağırlıklı olarak hırdavat perakendecileri ve toptancıları olmak üzere; mobilya imalatçılarından inşaat firmalarına, sanayi işletmelerinden satış noktalarına kadar geniş bir müşteri ağına koli ve palet bazında düzenli tedarik sağlıyoruz.</p>
 </div>
@@ -740,6 +762,13 @@ body.dark .faq-item summary{color:#E8EEF5}
 <div class="form-field">
 <label for="f-mesaj">Talebiniz *</label>
 <textarea id="f-mesaj" name="mesaj" placeholder="Örn: Dayson Extra PU Mastik beyaz, 10 koli için fiyat rica ediyorum." required="" rows="4"></textarea>
+</div>
+<div class="kvkk-row">
+<label class="kvkk-label"><input name="kvkk" required="" type="checkbox" value="onay"/> <span>Kişisel verilerimin teklif talebime dönüş yapılması amacıyla işlenmesini kabul ediyorum.</span></label>
+<details class="kvkk-details">
+<summary>Aydınlatma Metni</summary>
+<p>Bu form aracılığıyla paylaştığınız ad-soyad, firma adı, telefon ve şehir bilgileri, 6698 sayılı KVKK kapsamında yalnızca teklif talebinize dönüş yapılması amacıyla işlenir; üçüncü kişilerle paylaşılmaz ve pazarlama amacıyla kullanılmaz. Verilerinizin silinmesini istediğinizde info@aksanhirdavat.com.tr adresine yazmanız yeterlidir.</p>
+</details>
 </div>
 <button class="btn btn-red" id="fSubmit" type="submit">Teklif İste</button>
 <div class="form-ok" id="fOk">
