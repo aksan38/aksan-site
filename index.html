@@ -12,7 +12,7 @@
 <meta content="Aksan Hırdavat" name="author"/>
 <meta content="TR-38" name="geo.region"/>
 <meta content="Kayseri" name="geo.placename"/>
-<meta content="bWvzYWG4Rb2Gh91ZOnEGqAoPv8c9dGDQUZQiAVS7q6U" name="google-site-verification"/>
+
 <meta content="bWvzYWG4Rb2Gh91ZOnEGqAoPv8c9dGDQUZQiAVS7q6U" name="google-site-verification"/>
 <!-- Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QKW97N4C7F"></script>
@@ -23,12 +23,28 @@
   gtag('config', 'G-QKW97N4C7F');
 </script>
 <link href="https://aksanhirdavat.com.tr/" rel="canonical"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Dayson Extra PU Mastik kolisinde kaç adet var?", "acceptedAnswer": {"@type": "Answer", "text": "Bir kolide 25 adet 280 ml kartuş bulunur. Bir palet 72 koliden oluşur. Aksan Hırdavat'ta satışlar koli ve palet bazındadır."}},
+    {"@type": "Question", "name": "Kayseri'de Dayson PU mastik toptan nereden alınır?", "acceptedAnswer": {"@type": "Answer", "text": "Aksan Hırdavat'ın Kayseri Organize Sanayi Bölgesi 2. Cadde No: 10 adresindeki deposundan stoktan teslim alınabilir. OSB içi teslimat ücretsizdir, sipariş aynı gün depodan çıkar. Telefon: 0533 508 53 57"}},
+    {"@type": "Question", "name": "Dayson Extra PU Mastik hangi renklerde bulunur?", "acceptedAnswer": {"@type": "Answer", "text": "Siyah, beyaz, gri, kırmızı ve antrasit gri renkler Aksan Hırdavat deposunda sürekli stoktan teslim edilir."}},
+    {"@type": "Question", "name": "Aksan Hırdavat perakende satış yapıyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır, satışlar yalnızca koli ve palet bazında toptandır. Tüm satışlar faturalıdır."}},
+    {"@type": "Question", "name": "Dayson Extra PU Mastik'in teknik özellikleri nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır, sürekli elastik kalır, UV ışınlarına dayanıklıdır ve üzeri boyanabilir. Beton, metal, alüminyum, ahşap, cam ve polyester yüzeylere yapışır."}}
+  ]
+}
+</script>
 <!-- Open Graph (WhatsApp, sosyal medya önizleme) -->
 <meta content="website" property="og:type"/>
 <meta content="https://aksanhirdavat.com.tr/" property="og:url"/>
 <meta content="Dayson PU Mastik Toptan — Aksan Hırdavat Kayseri OSB" property="og:title"/>
 <meta content="Kayseri OSB'de Dayson Extra PU Mastik toptan satış noktası. Koli ve palet bazında stoktan hızlı teslimat. 0533 508 53 57" property="og:description"/>
 <meta content="tr_TR" property="og:locale"/>
+<meta content="https://aksanhirdavat.com.tr/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
 <!-- Yapısal veri (Google rich results) -->
 <script type="application/ld+json">
 {
@@ -353,6 +369,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     transform:translateY(-2px) scale(1.035);
   }
 }
+
+/* ---------- karanlık mod ---------- */
+.theme-toggle{background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:1rem;line-height:1;margin-left:14px}
+body.dark{
+  --bg:#0C141E;
+  --card:#141F2C;
+  --line:#26364A;
+  --steel:#A9B6C4;
+  --skyline:#2E4A6B;
+}
+body.dark{background:var(--bg)}
+body.dark header,
+body.dark .brands-sec,
+body.dark .fact,
+body.dark .terms-box,
+body.dark .modal{background:var(--card)}
+body.dark .brand img{background:#F6F8FB;border-radius:8px;padding:3px 8px;box-sizing:border-box}
+body.dark .sec-title, body.dark .cat-name, body.dark .m-title,
+body.dark .family-head h3, body.dark .brand-tile .b-name,
+body.dark .modal h3, body.dark .terms-title,
+body.dark .corp .sec-title, body.dark .fact .f-big,
+body.dark .contact-card h4, body.dark #iletisim h4{color:#E8EEF5}
+body.dark .m-info li, body.dark .m-info li strong{color:#C4D0DD}
+body.dark .quote-form input, body.dark .quote-form select, body.dark .quote-form textarea{background:#0F1926;color:#E8EEF5;border-color:var(--line)}
+body.dark .quote-form label{color:#C4D0DD}
+body.dark .m-close{color:#E8EEF5}
+.faq{max-width:760px;margin-top:48px}
+.faq-title{font-size:1.3rem;color:var(--navy-deep);margin-bottom:16px}
+body.dark .faq-title{color:#E8EEF5}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:14px 18px;font-weight:600;color:var(--navy-deep);font-size:.95rem;list-style:none;position:relative;padding-right:40px}
+body.dark .faq-item summary{color:#E8EEF5}
+.faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.2rem;color:var(--steel)}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{padding:0 18px 16px;color:var(--steel);font-size:.92rem;line-height:1.6}
 </style>
 </head>
 <body>
@@ -370,6 +421,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <li><a href="#kurumsal">Kurumsal</a></li>
 <li><a href="#iletisim">İletişim</a></li>
 </ul>
+<button aria-label="Karanlık mod" class="theme-toggle" id="themeToggle" type="button">🌙</button>
 </div>
 </header>
 <!-- HERO -->
@@ -406,7 +458,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div class="wrap">
 <div aria-hidden="true" class="sec-mark"></div>
 <h2 class="sec-title display">Ürünler</h2>
-<p class="sec-sub">Stoktan teslim, toptan fiyatla. Tüm ürünler orijinal — fatura ve irsaliye ile.</p>
+<p class="sec-sub">Stoktan teslim, toptan fiyatla. Tüm ürünler orijinal ve faturalıdır.</p>
 
 <div class="cat-head" id="yapi-kimyasallari">
 <span class="cat-name display">Yapı Kimyasalları</span>
@@ -446,6 +498,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </button>
 </div>
 <p class="stock-note">Tüm renkler stoktan teslim — koli ve palet bazında satış.</p>
+</div>
+<div class="faq">
+<h3 class="display faq-title">Sık Sorulan Sorular</h3>
+<details class="faq-item">
+<summary>Dayson Extra PU Mastik kolisinde kaç adet var?</summary>
+<p>Bir kolide 25 adet 280 ml kartuş bulunur. Bir palet 72 koliden oluşur. Satışlarımız koli ve palet bazındadır.</p>
+</details>
+<details class="faq-item">
+<summary>Kayseri'de Dayson PU mastik toptan nereden alınır?</summary>
+<p>Kayseri Organize Sanayi Bölgesi 2. Cadde No: 10 adresindeki depomuzdan stoktan teslim alabilirsiniz. OSB içi teslimat ücretsizdir ve sipariş aynı gün depodan çıkar.</p>
+</details>
+<details class="faq-item">
+<summary>Hangi renkler stokta bulunur?</summary>
+<p>Siyah, beyaz, gri, kırmızı ve antrasit gri renkler sürekli stoktan teslim edilir.</p>
+</details>
+<details class="faq-item">
+<summary>Perakende (tekli) satış yapıyor musunuz?</summary>
+<p>Hayır, satışlarımız yalnızca koli ve palet bazında toptandır. Tüm satışlarımız faturalıdır.</p>
+</details>
+<details class="faq-item">
+<summary>Şehir dışına gönderim yapıyor musunuz?</summary>
+<p>Evet, Türkiye geneline anlaşmalı ambar veya kargo ile gönderim yapılır. Nakliye alıcıya aittir; sipariş aynı gün depomuzdan çıkar.</p>
+</details>
+<details class="faq-item">
+<summary>Dayson Extra PU Mastik'in teknik özellikleri nedir?</summary>
+<p>Tek bileşenli, hava nemi ile kürleşen poliüretan mastiktir. −40 °C / +90 °C sıcaklık dayanımı vardır; sürekli elastik kalır, UV ışınlarına dayanıklıdır ve üzeri boyanabilir. Beton, metal, alüminyum, ahşap, cam ve polyester yüzeylere yapışır.</p>
+</details>
 </div>
 </div>
 </section>
@@ -496,7 +575,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div class="corp-facts">
 <div class="fact"><span class="display f-big">Saha Satışı</span><span class="f-label">Kayseri ve bölgesinde yerinde ziyaret, düzenli tedarik</span></div>
 <div class="fact"><span class="display f-big">Depodan Teslim</span><span class="f-label">OSB içindeki depomuzdan gel-al veya sevkiyat</span></div>
-<div class="fact"><span class="display f-big">E-Ticaret</span><span class="f-label">Trendyol ve Hepsiburada mağazalarımızla Türkiye geneli satış</span></div>
+
 </div>
 </div>
 </section>
@@ -549,7 +628,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <h3 class="display terms-title">Çalışma Koşullarımız</h3>
 <ul class="terms-list">
 <li>Satışlarımız <strong>koli ve palet bazındadır</strong> — perakende satışımız yoktur.</li>
-<li>Tüm satışlar <strong>faturalı ve irsaliyelidir</strong>.</li>
+<li>Tüm satışlarımız <strong>faturalıdır</strong>.</li>
 <li><strong>Kayseri OSB içi teslimat ücretsizdir</strong>; sipariş aynı gün depomuzdan çıkar.</li>
 <li>Şehir dışı sevkiyatta <strong>nakliye alıcıya aittir</strong>; anlaşmalı ambar veya kargo ile gönderim yapılır.</li>
 <li>Ödeme koşulları sipariş görüşmesinde netleştirilir.</li>
@@ -716,6 +795,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </a>
 <script>
 (function(){
+  // Karanlık mod
+  var toggle = document.getElementById('themeToggle');
+  var saved = null;
+  try { saved = localStorage.getItem('tema'); } catch(e){}
+  var dark = saved ? saved === 'koyu' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  function applyTheme(){
+    document.body.classList.toggle('dark', dark);
+    if(toggle) toggle.textContent = dark ? '\u2600\uFE0F' : '\uD83C\uDF19';
+  }
+  applyTheme();
+  if(toggle){
+    toggle.addEventListener('click', function(){
+      dark = !dark;
+      try { localStorage.setItem('tema', dark ? 'koyu' : 'acik'); } catch(e){}
+      applyTheme();
+    });
+  }
+
   var pageIds = ['top', 'urunler', 'neden', 'teklif', 'markalar', 'kurumsal', 'iletisim'];
   var pages = pageIds.map(function(id){ return document.getElementById(id); }).filter(Boolean);
   var pageLinks = document.querySelectorAll('.brand[href="#top"], .nav-links a[href^="#"]');
@@ -763,6 +860,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   function openModal(renk, hex){
     var ad = 'Dayson Extra Profesyonel PU Mastik ' + renk + ' 280 ML';
     mTitle.textContent = ad;
+    mImg.alt = ad + ' — Kayseri OSB toptan satış';
     if(IMGS[renk]){ mImg.src = IMGS[renk]; mImg.style.display='block'; } else { mImg.style.display='none'; }
     mWa.href = 'https://wa.me/905335085357?text=' + encodeURIComponent('Merhaba, ' + ad + ' için koli/palet fiyatı almak istiyorum.');
     modal.hidden = false;
