@@ -161,10 +161,7 @@ body.page-mode > section.active-page{display:block}
 .btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
 .btn-ghost:hover{border-color:#fff}
 
-/* kartuş illüstrasyonu */
-.cartridge{display:flex;justify-content:center}
-.cartridge svg{width:min(280px,70%);height:auto}
-@media(max-width:760px){.cartridge{display:none}}
+
 
 /* ---------- mastik fitili (imza öğesi) ---------- */
 .bead{display:block;width:100%;height:64px;margin-top:-2px}
@@ -439,6 +436,9 @@ body.dark .faq-item summary{color:#E8EEF5}
 .depo-fig{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .depo-fig img{width:100%;height:340px;object-fit:cover;display:block}
 .depo-fig figcaption{padding:12px 16px;font-size:.85rem;color:var(--steel);line-height:1.5}
+.hero-photo{display:flex;justify-content:center;align-items:center}
+.hero-photo img{width:100%;max-width:340px;height:auto;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+@media(max-width:760px){.hero-photo{display:none}}
 </style>
 </head>
 <body>
@@ -471,17 +471,8 @@ body.dark .faq-item summary{color:#E8EEF5}
 <a class="btn btn-ghost" href="tel:+905335085357">Hemen Ara</a>
 </div>
 </div>
-<div aria-hidden="true" class="cartridge">
-<svg viewbox="0 0 200 340" xmlns="http://www.w3.org/2000/svg">
-<path d="M97 6 L103 6 L106 56 L94 56 Z" fill="#C9CDCF"></path>
-<rect fill="#9A9D9F" height="18" rx="4" width="28" x="86" y="56"></rect>
-<rect fill="#fff" height="240" rx="14" width="100" x="50" y="74"></rect>
-<rect fill="none" height="240" rx="14" stroke="#D9DEE5" stroke-width="2" width="100" x="50" y="74"></rect>
-<rect fill="#D7261D" height="120" width="100" x="50" y="120"></rect>
-<text fill="#fff" font-family="Saira Condensed, sans-serif" font-size="30" font-weight="800" letter-spacing="1" text-anchor="middle" x="100" y="170">DAYSON</text>
-<text fill="#fff" font-family="Archivo, sans-serif" font-size="13" font-weight="600" opacity=".9" text-anchor="middle" x="100" y="200">PU MASTİK</text>
-<rect fill="#5C6670" height="14" rx="6" width="108" x="46" y="314"></rect>
-</svg>
+<div class="hero-photo">
+<img alt="Dayson Universal ve Dayson Extra PU Mastik 280 ml — Aksan toptan satış" fetchpriority="high" src="urun-dayson.webp" width="800" height="1200"/>
 </div>
 </div>
 <svg aria-hidden="true" class="bead" preserveaspectratio="none" viewbox="0 0 1440 64">
