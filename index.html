@@ -631,8 +631,8 @@ body.dark .faq-item summary{color:#E8EEF5}
 <figcaption>Palet bazında hazır stok — koliler sevkiyata hazır</figcaption>
 </figure>
 <figure class="depo-fig">
-<img alt="Dayson Universal ve Dayson Extra PU mastik 280 ml kartuşlar — Aksan toptan satış" loading="lazy" src="depo-urunler.webp" width="900" height="1350"/>
-<figcaption>Dayson Universal ve Dayson Extra PU mastik — orijinal ürün, 280 ml kartuş</figcaption>
+<img alt="Aksan — Kayseri OSB tesis cephesi" loading="lazy" src="depo-cephe.webp" width="1000" height="694"/>
+<figcaption>Kayseri OSB'deki yerimiz — elektrik, aydınlatma ve hırdavat malzemeciliği aynı çatı altında</figcaption>
 </figure>
 </div>
 </div>
@@ -921,7 +921,7 @@ body.dark .faq-item summary{color:#E8EEF5}
   var mWa = document.getElementById('mWa');
   var mClose = document.getElementById('mClose');
   var lastFocus = null;
-  var IMGS = {"Siyah": "mastik-siyah.webp", "Beyaz": "mastik-beyaz.webp", "Gri": "mastik-gri.webp", "Kırmızı": "mastik-kirmizi.webp", "Antrasit Gri": "mastik-antrasit.webp"};
+  
 
   var mInfo = document.getElementById('mInfo');
   var ORTAK = [
@@ -934,6 +934,7 @@ body.dark .faq-item summary{color:#E8EEF5}
   var PRODUCTS = {
     extra: {
       ad: 'Dayson Extra Profesyonel PU Mastik',
+      img: 'urun-extra.webp',
       url: 'https://www.avrupagroup.com/products/dayson-sealants/dayson-extra-polyurethane-sealant',
       specs: [
         ['Sıcaklık dayanımı', '−40 °C / +90 °C'],
@@ -946,6 +947,7 @@ body.dark .faq-item summary{color:#E8EEF5}
     },
     universal: {
       ad: 'Dayson Universal Genel Amaçlı PU Mastik',
+      img: 'urun-universal.webp',
       url: 'https://www.avrupagroup.com/products/dayson-sealants/dayson-universal-polyurethane-sealant',
       specs: [
         ['Kuruma', 'Kabuklaşma ~70 dk · kürleşme > 3.5 mm/24 saat (23 °C)'],
@@ -963,7 +965,7 @@ body.dark .faq-item summary{color:#E8EEF5}
     var ad = p.ad + ' ' + renk + ' 280 ML';
     mTitle.textContent = ad;
     mImg.alt = ad + ' — Kayseri OSB toptan satış';
-    if(IMGS[renk]){ mImg.src = IMGS[renk]; mImg.style.display='block'; } else { mImg.style.display='none'; }
+    mImg.src = p.img; mImg.style.display='block';
     var rows = ORTAK.concat(p.specs);
     var out = '';
     for(var i=0;i<rows.length;i++){
